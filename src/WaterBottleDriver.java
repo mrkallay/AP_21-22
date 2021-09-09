@@ -14,7 +14,8 @@ public class WaterBottleDriver
 
         WaterBottle anotherBottle = new WaterBottle(100);
         System.out.println(anotherBottle.getInfo());
-        new WaterBottle(56, 4);
+        //new WaterBottle(56, 4);
+        anotherBottle.setCurrentVolume(4.9);
 
     }
 }

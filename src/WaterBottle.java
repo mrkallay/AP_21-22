@@ -41,4 +41,9 @@ public class WaterBottle
         String info = getCapacity() + "\n" + getCurrentVolume();
         return info;
     }
+
+    public void setCurrentVolume(double vol)
+    {
+        currentVolume = vol;
+    }
 }
