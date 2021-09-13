@@ -4,22 +4,27 @@ Created by Brian Kallay
 
 public class WaterBottle
 {
+    //class variables
+    private static int totalBottles;
+
     //instance variables
     private double capacity; //use private to "protect" the data
     private double currentVolume;
 
     //constructor
-    public WaterBottle(double cap, double currentVol)
+    public WaterBottle(double capacity, double currentVolume)
     {
-        capacity = cap;
-        currentVolume = currentVol;
+        this.capacity = capacity;
+        this.currentVolume = currentVolume;
+        totalBottles++;
     }
 
     //overloaded constructor
-    public WaterBottle(double cap)
+    public WaterBottle(double capacity)
     {
-        capacity =  cap;
+        this.capacity =  capacity;
         currentVolume = 0;
+        totalBottles++;
     }
 
 
@@ -32,7 +37,7 @@ public class WaterBottle
 
     public String getCurrentVolume()
     {
-        String info = "Current Volume: " + currentVolume;
+        String info = "Current Volume: " + this.currentVolume;
         return info;
     }
 
@@ -42,8 +47,13 @@ public class WaterBottle
         return info;
     }
 
-    public void setCurrentVolume(double vol)
+    public void setCurrentVolume(Double currentVolume)
     {
-        currentVolume = vol;
+        this.currentVolume = currentVolume;
+    }
+
+    public static int getTotalBottles()
+    {
+        return totalBottles;
     }
 }
