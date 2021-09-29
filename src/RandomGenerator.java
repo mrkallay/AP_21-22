@@ -12,21 +12,36 @@ public class RandomGenerator
         min = 0;
         max = 100;
     }
-    //1)Create a second constructor that accepts a min and max as parameters and apply those
-    //values to the instance variables
+
+    //a )Create a second constructor that accepts a min and max as parameters and apply those
+    //values to the appropriate instance variables (3 pts)
 
 
 
-    //2)complete the following method that is intended to set the max value
-    public void setMax(int max)
+
+
+
+
+
+    //b ) Complete the following getter method so that it returns the value of the instance
+    //    variable max to the caller (1 pt)
+    public int getMax()
     {
+
+
 
     }
 
     //3)complete the following method that is intended to return a random int
-    //that is between min and max inclusive
-    public int getRandomInt()
+    //that is between min and max inclusive (4 pts)
+    public void getRandomInt()
     {
-        return 0;
+
+
+
+
+
+
+
     }
 }
